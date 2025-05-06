@@ -2,7 +2,7 @@ import { Customer } from "@prisma/client";
 import prisma from "../../../shared/prisma";
 
 const createCustomer = async (customerData: Customer) => {
-  console.log(customerData);
+  // console.log(customerData);
 
   const isExist = await prisma.customer.findFirst({
     where: {
@@ -10,7 +10,7 @@ const createCustomer = async (customerData: Customer) => {
     },
   });
 
-  console.log(isExist);
+  // console.log(isExist);
 
   if (isExist) {
     throw new Error("Customer Already Exist..");
