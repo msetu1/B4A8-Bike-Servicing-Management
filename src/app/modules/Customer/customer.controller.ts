@@ -8,7 +8,7 @@ const createCustomer = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: status.CREATED,
     success: true,
-    message: "Customer created successfully !",
+    message: "Customer created successfully",
     data: result,
   });
 });
@@ -18,7 +18,7 @@ const getAllCustomer = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: status.OK,
     success: true,
-    message: "Customers fetched successfully !",
+    message: "Customers fetched successfully",
     data: result,
   });
 });
@@ -28,7 +28,7 @@ const getCustomerById = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: status.OK,
     success: true,
-    message: "Customers fetched successfully !",
+    message: "Customers fetched successfully",
     data: result,
   });
 });
@@ -47,7 +47,7 @@ const deleteCustomer = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: status.OK,
     success: true,
-    message: "Customer deleted successfully!",
+    message: "Customer deleted successfull",
     data: {},
   });
 });
